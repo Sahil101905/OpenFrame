@@ -1,0 +1,53 @@
+# ========================================
+# OpenFrame Unity-generated folders
+# ========================================
+
+unity-simulator/[Ll]ibrary/
+unity-simulator/[Tt]emp/
+unity-simulator/[Oo]bj/
+unity-simulator/[Ll]ogs/
+unity-simulator/[Uu]ser[Ss]ettings/
+unity-simulator/[Mm]emoryCaptures/
+unity-simulator/[Rr]ecordings/
+
+# Unity build output
+unity-simulator/[Bb]uild/
+unity-simulator/[Bb]uilds/
+
+# ========================================
+# Unity and Visual Studio generated files
+# ========================================
+
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.unityproj
+
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Visual Studio / IDE folders
+.vs/
+.idea/
+
+# Uncomment this later if you do not want
+# personal VS Code settings uploaded
+# .vscode/
+
+# ========================================
+# Operating system files
+# ========================================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Unity crash reports
+sysinfo.txt
