@@ -1,0 +1,28 @@
+{
+  "notifications": [
+    {
+      "sourceApplication": "Messages",
+      "title": "Alex",
+      "messageBody": "The prototype review starts in ten minutes.",
+      "timestamp": "9:41 AM"
+    },
+    {
+      "sourceApplication": "Calendar",
+      "title": "OpenFrame Stand-up",
+      "messageBody": "Design lab, second floor.",
+      "timestamp": "10:00 AM"
+    },
+    {
+      "sourceApplication": "Weather",
+      "title": "Rain starting soon",
+      "messageBody": "Light rain is expected for the next hour.",
+      "timestamp": "10:18 AM"
+    },
+    {
+      "sourceApplication": "Tasks",
+      "title": "Charge glasses",
+      "messageBody": "Battery is below 25 percent.",
+      "timestamp": "11:05 AM"
+    }
+  ]
+}
