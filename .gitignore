@@ -43,6 +43,18 @@
 # **/.vscode/
 
 # ========================================
+# Xcode / iOS host (ios-host)
+# ========================================
+
+# Per-user Xcode state — the generated .xcodeproj itself IS committed
+# (reproducible via `xcodegen generate`), but user-specific bits are not.
+**/xcuserdata/
+**/*.xcuserstate
+**/DerivedData/
+**/*.xcscmblueprint
+**/*.xccheckout
+
+# ========================================
 # Operating system files
 # ========================================
 
