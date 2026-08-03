@@ -147,42 +147,52 @@ Keep the battery disconnected while soldering.
 1. Cut wires only long enough to reach through the planned channels with a small
    service loop at hinges and connectors.
 2. Solder and insulate the OLED and button connections tested in Phases 1-2.
-3. Connect PowerBoost 500 Basic `5V` to the ESP32's documented `5V`/`VIN` input
-   and connect grounds. Never connect 5 V to a `3V3` pin.
-4. Use two slide-switch contacts between PowerBoost `EN` and `GND`. When those
+3. Cut the JST-PH 2.0 pigtail half that mates with the battery to a useful
+   length. Before
+   soldering, plug it into the battery and use a multimeter to identify its
+   actual positive and negative conductors; do not trust wire colors alone.
+4. Solder pigtail positive to MiniBoost `IN` and pigtail negative to `GND`.
+   Insulate both joints. The battery must remain unplugged while soldering.
+5. Connect MiniBoost `5V` to the ESP32's documented `5V`/`VIN` input and connect
+   grounds. Never connect 5 V to a `3V3` pin.
+6. Use two slide-switch contacts between MiniBoost `EN` and `GND`. When those
    contacts close, the booster turns off. Check the contacts with a continuity
    meter before soldering and isolate the unused contact.
-5. Cover every joint with heat-shrink and inspect for stray wire strands.
-6. With no battery connected, check resistance between `5V` and `GND`. Stop and
+7. Cover every joint with heat-shrink and inspect for stray wire strands.
+8. With no battery connected, check resistance between `5V` and `GND`. Stop and
    find the short if the meter indicates near-zero resistance.
-7. Verify red/positive and black/negative polarity at both JST connectors before
-   plugging in the protected battery.
-8. Turn on the boost board and measure its output before connecting the ESP32.
-9. Turn it off, connect the ESP32, then power the complete assembly on the bench.
+9. Verify polarity at the battery and socket lead again before plugging in the
+   protected battery.
+10. Turn on the boost board and measure its output before connecting the ESP32.
+11. Turn it off, connect the ESP32, then power the complete assembly on the bench.
 
 Checkpoint: notifications and both buttons operate from battery power for 15
 minutes, voltage remains stable, and no component or wire becomes hot.
 
 ## Phase 7: charge the battery safely
 
-The Micro-Lipo is an off-device charger. Do not charge the battery while it is
-inside the glasses or connected to the PowerBoost.
+The Micro Lipo is an off-device charger. Do not charge the battery while it is
+inside the glasses or connected to the MiniBoost.
 
 1. Turn the glasses off.
 2. Unplug the battery by gripping the JST housing, never the wires.
 3. Inspect the cell for swelling, dents, punctures, damaged insulation, loose
    wires, or heat. Retire a damaged cell; do not charge it.
-4. Confirm the Micro-Lipo charge-rate jumper remains open. Its default 100 mA
+4. Confirm the Micro Lipo charge-rate jumper remains open. Its default 100 mA
    rate is below the battery's 500 mA maximum.
 5. Put the charger and battery on a nonflammable surface away from the frame.
-6. Connect the battery to the Micro-Lipo, then connect USB power.
+6. Connect the battery to the Micro Lipo, verify connector polarity, then plug
+   its integrated USB-A connector into a USB power source.
 7. Remain present while charging. Disconnect USB for heat, swelling, unusual
    odor, or unexpected wiring behavior.
 8. When charging completes, unplug USB first, then disconnect and reinstall the
    battery in the powered-off glasses.
 
-Reference: see the [Adafruit 500 mAh battery instructions](https://www.adafruit.com/product/1578)
-and [Micro-Lipo charger description](https://www.adafruit.com/product/1904).
+Amazon purchase references: [Liter 500 mAh battery](https://www.amazon.com/dp/B09FLYGKK3),
+[Adafruit MiniBoost](https://www.amazon.com/dp/B0979MJJSK), and
+[Adafruit Micro Lipo USB charger](https://www.amazon.com/dp/B00OKJFEQ2). The
+[JST-PH 2.0 pigtail pack](https://www.amazon.com/dp/B08SC3F658) supplies the
+mating battery lead for the MiniBoost.
 
 ## Phase 8: final integration and wear test
 
