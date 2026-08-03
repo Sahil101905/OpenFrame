@@ -47,6 +47,8 @@ so the shell can be reviewed first. See the out-of-scope section in
 | 🛠️ [macOS Setup](documentation/setup-macos.md) | Concise prerequisites and the exact build / test / run / device commands. |
 | 📱 [iOS Host README](ios-host/README.md) | The host module's developer entry point and layout. |
 | 🔌 [Notification Protocol Examples](protocol/examples/README.md) | The canonical notification JSON schema and the keep-in-sync rule. |
+| 🥽 [Windows Unity Simulator Setup](documentation/setup-windows.md) | How to open and test the notification simulator in Unity. |
+| 🔧 [Monocular Hardware Prototype BOM](documentation/prototype-bom.md) | Finalized parts, costs, safety notes, and build order for the first wearable prototype. |
 
 ---
 
