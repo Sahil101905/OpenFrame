@@ -5,29 +5,29 @@ prototype. It is intended to prove the notification UI, display optics, comfort,
 and frame geometry before investing in a custom PCB or higher-resolution
 microdisplay.
 
-Prices were checked against Amazon US listings on August 3, 2026 and may change.
-The ESP32 development board and 3D printer are assumed to be available already.
-The selected listings prioritize the lowest practical purchase quantity rather
-than the lowest per-unit price.
+Prices were checked against the linked US retailer listings on August 3, 2026
+and may change. The ESP32 development board and 3D printer are assumed to be
+available already. The selected listings prioritize the lowest practical
+purchase quantity rather than the lowest per-unit price.
 
-## Core components
+## Complete wearable prototype — $81 target
 
-| Component | Final specification | Purchase quantity | Checked cost | Purchase link |
-| --- | --- | ---: | ---: | --- |
-| Monochrome OLED | **White**, 0.96 inch, 128 x 64, SSD1306, I2C, four-pin, 3.3 V compatible | 1 display | $6.99 | [HiLetgo single display](https://www.amazon.com/dp/B06XRBTBTB) |
-| Collimating lens | Optical-glass biconvex lens, 34 mm diameter and 45 mm focal length | 1 set | $7.99 | [Pop-Tech lens set](https://www.amazon.com/dp/B012HYF4A2) |
-| Optical combiner | 50R/50T optical-grade acrylic teleprompter mirror, approximately 3 mm thick | 1 sample | $9.95 | [Teleprompter Mirror sample](https://telepromptermirror.com/sample/) |
-| Notification controls | 6 x 6 x 6 mm, four-pin momentary tactile pushbuttons | 10 switches | $5.29 | [Corpco ten-pack](https://www.amazon.com/dp/B01GN79QF8) |
-| Hookup wire | Flexible, stranded, tinned-copper 30 AWG silicone wire, six colors, 10 feet each | 1 six-color set | $9.29 | [Fermerry wire set](https://www.amazon.com/dp/B089D31ZX6) |
-| Battery | Protected 3.7 V, 500 mAh LiPo with JST-PH 2.0 connector | 1 battery | $10-$16 | [Adafruit 1578 search](https://www.amazon.com/s?k=Adafruit+1578+500mAh+LiPo+battery) |
-| Power and charging board | Adafruit PowerBoost 1000 Charger, providing LiPo charging and regulated 5 V output | 1 board | $20-$30 | [Amazon search](https://www.amazon.com/s?k=Adafruit+PowerBoost+1000+Charger) |
-| Power switch | Miniature SS12F15 SPDT slide switch | 20 switches | $5.99 | [Mini-switch 20-pack](https://www.amazon.com/dp/B0DN69L9SG) |
-| Electrical insulation | Black 1/8-inch, 3:1 adhesive-lined heat-shrink tubing | 1 roll | $5.88 | [Heat-shrink roll](https://www.amazon.com/dp/B0CZMZKR69) |
+| Component | Final specification | Used in one wearable | Purchase quantity | Checked cost | Purchase link |
+| --- | --- | ---: | ---: | ---: | --- |
+| Monochrome OLED | **White**, 0.96 inch, 128 x 64, SSD1306, I2C, four-pin, 3.3 V compatible | 1 | 1 display | $6.99 | [HiLetgo single display](https://www.amazon.com/dp/B06XRBTBTB) |
+| Collimating lens | Optical-glass biconvex lens, 34 mm diameter and 45 mm focal length | 1 | 1 set | $7.99 | [Pop-Tech lens set](https://www.amazon.com/dp/B012HYF4A2) |
+| Optical combiner | 50R/50T optical-grade acrylic teleprompter mirror, approximately 3 mm thick | 1 cut piece | 1 sample | $9.95 | [Teleprompter Mirror sample](https://telepromptermirror.com/sample/) |
+| Notification controls | 6 x 6 x 6 mm, four-pin momentary tactile pushbuttons | 2 | 10 switches | $5.29 | [Corpco ten-pack](https://www.amazon.com/dp/B01GN79QF8) |
+| Hookup wire | Flexible, stranded, tinned-copper 30 AWG silicone wire, six colors, 10 feet each | As needed | 1 six-color set | $9.29 | [Fermerry wire set](https://www.amazon.com/dp/B089D31ZX6) |
+| Battery | Protected 3.7 V, 500 mAh LiPo with JST-PH 2.0 connector | 1 | 1 battery | $7.95 | [Adafruit battery 1578](https://www.adafruit.com/product/1578) |
+| Power and charging board | Adafruit PowerBoost 1000C with LiPo charging and regulated 5.2 V output | 1 | 1 board | $19.95 | [Adafruit PowerBoost 1000C](https://www.adafruit.com/product/2465) |
+| Power switch | Miniature SS12F15 SPDT slide switch | 1 | 20 switches | $5.99 | [Mini-switch 20-pack](https://www.amazon.com/dp/B0DN69L9SG) |
+| Electrical insulation | Black 1/8-inch, 3:1 adhesive-lined heat-shrink tubing | Less than 1 foot | 1 roll | $5.88 | [Heat-shrink roll](https://www.amazon.com/dp/B0CZMZKR69) |
 
-The display-and-optics bench prototype costs approximately **$40**. Adding the
-battery, charger, power switch, and heat-shrink brings the complete wearable BOM
-to approximately **$81-$97**, excluding tax, shipping, the ESP32, tools, and
-3D-printing equipment.
+**Parts subtotal: $79.28.** Use **$81** as the purchasing target, leaving $1.72
+for small listing-price changes. Tax and shipping are not included. The
+display-and-optics bench subset is $39.51; the remaining $39.77 adds protected
+battery power, charging, a physical power switch, and insulated final wiring.
 
 ## Items intentionally omitted or deferred
 
