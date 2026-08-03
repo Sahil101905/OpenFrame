@@ -49,6 +49,7 @@ so the shell can be reviewed first. See the out-of-scope section in
 | 🔌 [Notification Protocol Examples](protocol/examples/README.md) | The canonical notification JSON schema and the keep-in-sync rule. |
 | 🥽 [Windows Unity Simulator Setup](documentation/setup-windows.md) | How to open and test the notification simulator in Unity. |
 | 🔧 [Monocular Hardware Prototype BOM](documentation/prototype-bom.md) | Finalized parts, costs, safety notes, and build order for the first wearable prototype. |
+| 🥽 [Hardware Prototype Assembly](documentation/prototype-assembly.md) | Step-by-step electronics, optics, combiner cutting, CAD, charging, and wear-test procedure. |
 
 ---
 

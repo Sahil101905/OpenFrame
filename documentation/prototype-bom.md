@@ -16,18 +16,20 @@ purchase quantity rather than the lowest per-unit price.
 | --- | --- | ---: | ---: | ---: | --- |
 | Monochrome OLED | **White**, 0.96 inch, 128 x 64, SSD1306, I2C, four-pin, 3.3 V compatible | 1 | 1 display | $6.99 | [HiLetgo single display](https://www.amazon.com/dp/B06XRBTBTB) |
 | Collimating lens | Optical-glass biconvex lens, 34 mm diameter and 45 mm focal length | 1 | 1 set | $7.99 | [Pop-Tech lens set](https://www.amazon.com/dp/B012HYF4A2) |
-| Optical combiner | 50R/50T optical-grade acrylic teleprompter mirror, approximately 3 mm thick | 1 cut piece | 1 sample | $9.95 | [Teleprompter Mirror sample](https://telepromptermirror.com/sample/) |
+| Optical combiner | Two-way acrylic mirror, 30% light transmission, 12 x 12 x 0.04 inches | 1 cut piece | 3 sheets | $10.27 | [Three-sheet acrylic two-way mirror pack](https://www.amazon.com/dp/B0FPMC4M2F) |
 | Notification controls | 6 x 6 x 6 mm, four-pin momentary tactile pushbuttons | 2 | 10 switches | $5.29 | [Corpco ten-pack](https://www.amazon.com/dp/B01GN79QF8) |
 | Hookup wire | Flexible, stranded, tinned-copper 30 AWG silicone wire, six colors, 10 feet each | As needed | 1 six-color set | $9.29 | [Fermerry wire set](https://www.amazon.com/dp/B089D31ZX6) |
 | Battery | Protected 3.7 V, 500 mAh LiPo with JST-PH 2.0 connector | 1 | 1 battery | $7.95 | [Adafruit battery 1578](https://www.adafruit.com/product/1578) |
-| Power and charging board | Adafruit PowerBoost 1000C with LiPo charging and regulated 5.2 V output | 1 | 1 board | $19.95 | [Adafruit PowerBoost 1000C](https://www.adafruit.com/product/2465) |
+| 5 V boost board | Adafruit PowerBoost 500 Basic with regulated 5.2 V output | 1 | 1 board | $9.95 | [Adafruit PowerBoost 500 Basic](https://www.adafruit.com/product/1903) |
+| Off-device battery charger | Adafruit Micro-Lipo v1, Micro-USB, default 100 mA charge rate | 1 | 1 board | $6.95 | [Adafruit Micro-Lipo charger](https://www.adafruit.com/product/1904) |
 | Power switch | Miniature SS12F15 SPDT slide switch | 1 | 20 switches | $5.99 | [Mini-switch 20-pack](https://www.amazon.com/dp/B0DN69L9SG) |
 | Electrical insulation | Black 1/8-inch, 3:1 adhesive-lined heat-shrink tubing | Less than 1 foot | 1 roll | $5.88 | [Heat-shrink roll](https://www.amazon.com/dp/B0CZMZKR69) |
 
-**Parts subtotal: $79.28.** Use **$81** as the purchasing target, leaving $1.72
+**Parts subtotal: $76.55.** Use **$81** as the purchasing target, leaving $4.45
 for small listing-price changes. Tax and shipping are not included. The
-display-and-optics bench subset is $39.51; the remaining $39.77 adds protected
-battery power, charging, a physical power switch, and insulated final wiring.
+display-and-optics bench subset is $39.83; the remaining $36.72 adds protected
+battery power, off-device charging, a physical power switch, and insulated final
+wiring.
 
 ## Items intentionally omitted or deferred
 
@@ -44,9 +46,12 @@ battery power, charging, a physical power switch, and insulated final wiring.
 - **Battery hardware during optical testing:** power the bench prototype over
   USB and defer all wearable power purchases until the display path works.
 
-The PowerBoost is the largest remaining conditional expense. If the exact ESP32
-board includes a compatible LiPo connector, charger, and power regulation, omit
-the PowerBoost after verifying the board documentation and battery polarity.
+The boost board and off-device charger replace the previously listed PowerBoost
+1000C. That board's charger can supply up to 1 A, while the selected 500 mAh
+battery specifies a charge rate of 500 mA or less. Do not use that pairing. If
+the exact ESP32 board includes a compatible LiPo connector, charger limited to
+500 mA or less, and power regulation, omit both separate boards only after
+verifying the board documentation and battery polarity.
 
 ## Final display choice
 
@@ -77,6 +82,9 @@ or high-resolution micro-OLED without redesigning the entire frame.
 - Verify JST red/black polarity at both connectors with a multimeter before
   connecting the LiPo. Connector housings from different vendors may use opposite
   polarity.
+- Remove the battery from the wearable and disconnect it from the boost board
+  before charging it with the Micro-Lipo. Leave the Micro-Lipo's 500 mA charge
+  jumper open so it uses the default 100 mA rate.
 - Use only a protected LiPo cell. Do not wear, charge, or continue testing a cell
   that is hot, swollen, punctured, or otherwise damaged.
 - Keep the beamsplitter's protective film installed during cutting and fitting.
@@ -91,8 +99,11 @@ or high-resolution micro-OLED without redesigning the entire frame.
 4. Adjust lens distance and combiner angle until the image is sharp at a relaxed
    viewing distance.
 5. CAD and print a removable display pod before designing the complete frame.
-6. Add the protected battery, charger, power switch, and strain relief.
-7. Measure power consumption and temperature before performing a short wear test.
+6. Add the boost board, protected battery, power switch, and strain relief.
+7. Test off-device charging with the battery removed from the frame.
+8. Measure power consumption and temperature before performing a short wear test.
+
+Detailed instructions: [prototype assembly guide](prototype-assembly.md).
 
 A custom PCB, IMU, camera, networking hardware, and additional Bluetooth module
 are intentionally outside the first prototype BOM.
