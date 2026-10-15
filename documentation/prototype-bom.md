@@ -5,8 +5,9 @@ prototype. It is intended to prove the notification UI, display optics, comfort,
 and frame geometry before investing in a custom PCB or higher-resolution
 microdisplay.
 
-Prices were checked against the linked US retailer listings on August 3, 2026
-and may change. The ESP32 development board and 3D printer are assumed to be
+The original parts prices were checked against the linked US retailer listings on
+August 3, 2026. The eyeglass-lens price was checked on October 15, 2026.
+Prices may change. The ESP32 development board and 3D printer are assumed to be
 available already. The selected listings prioritize the lowest practical
 purchase quantity rather than the lowest per-unit price.
 
@@ -16,6 +17,7 @@ purchase quantity rather than the lowest per-unit price.
 | --- | --- | ---: | ---: | ---: | --- |
 | Monochrome OLED | **White**, 0.96 inch, 128 x 64, SSD1306, I2C, four-pin, 3.3 V compatible | 1 | 1 display | $6.99 | [HiLetgo single display](https://www.amazon.com/dp/B06XRBTBTB) |
 | Collimating lens | Optical-glass biconvex lens, 34 mm diameter and 45 mm focal length | 1 | 1 set | $7.99 | [Pop-Tech lens set](https://www.amazon.com/dp/B012HYF4A2) |
+| Eyeglass lenses | LenzReborn precut, non-polarized, transitional replacement lenses for Ray-Ban Meta Wayfarer RW4008 / Gen 2 RW4012, 53 mm; listed thickness 1.2 mm. Pair selected by the builder. | 2 | 1 pair | $7.50 | [LenzReborn lens pair](https://www.amazon.com/dp/B0GDXVHFDR) |
 | Optical combiner | Two-way acrylic mirror, 30% light transmission, 12 x 12 x 0.04 inches | 1 cut piece | 3 sheets | $10.27 | [Three-sheet acrylic two-way mirror pack](https://www.amazon.com/dp/B0FPMC4M2F) |
 | Notification controls | 6 x 6 x 6 mm, four-pin momentary tactile pushbuttons | 2 | 10 switches | $5.29 | [Corpco ten-pack](https://www.amazon.com/dp/B01GN79QF8) |
 | Hookup wire | Flexible, stranded, tinned-copper 30 AWG silicone wire, six colors, 10 feet each | As needed | 1 six-color set | $9.29 | [Fermerry wire set](https://www.amazon.com/dp/B089D31ZX6) |
@@ -26,11 +28,17 @@ purchase quantity rather than the lowest per-unit price.
 | Power switch | Miniature SS12F15 SPDT slide switch | 1 | 20 switches | $5.99 | [Mini-switch 20-pack](https://www.amazon.com/dp/B0DN69L9SG) |
 | Electrical insulation | Black 1/8-inch, 3:1 adhesive-lined heat-shrink tubing | Less than 1 foot | 1 roll | $5.88 | [Heat-shrink roll](https://www.amazon.com/dp/B0CZMZKR69) |
 
-**Parts subtotal: $86.18.** Tax and shipping are not included. The
-display-and-optics bench subset is $39.83; the remaining $46.35 adds protected
-battery power, off-device charging, a physical power switch, the battery socket
-lead, and insulated final wiring. Every purchase link in this table is an Amazon
+**Parts subtotal: $93.68.** Tax and shipping are not included. The
+display-and-optics bench subset is $39.83; the remaining $53.85 adds the
+eyeglass lenses, protected battery power, off-device charging, a physical power
+switch, the battery socket lead, and insulated final wiring. Every purchase link in this table is an Amazon
 listing. Prices and availability can change.
+
+The eyeglass lenses are separate from the 34 mm optical lens in the display pod.
+The 53 mm size does not establish their exact perimeter. The current OpenFrame
+CAD has no lens-retaining groove; measure the delivered pair and revise the
+frame front before treating them as a snap-fit part. Transitional lenses may
+darken outdoors.
 
 ## Items intentionally omitted or deferred
 
