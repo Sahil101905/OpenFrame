@@ -17,7 +17,7 @@ purchase quantity rather than the lowest per-unit price.
 | --- | --- | ---: | ---: | ---: | --- |
 | Monochrome OLED | **White**, 0.96 inch, 128 x 64, SSD1306, I2C, four-pin, 3.3 V compatible | 1 | 1 display | $6.99 | [HiLetgo single display](https://www.amazon.com/dp/B06XRBTBTB) |
 | Collimating lens | Optical-glass biconvex lens, 34 mm diameter and 45 mm focal length | 1 | 1 set | $7.99 | [Pop-Tech lens set](https://www.amazon.com/dp/B012HYF4A2) |
-| Eyeglass lenses | LenzReborn precut, non-polarized, transitional replacement lenses for Ray-Ban Meta Wayfarer RW4008 / Gen 2 RW4012, 53 mm; listed thickness 1.2 mm. Pair selected by the builder. | 2 | 1 pair | $7.50 | [LenzReborn lens pair](https://www.amazon.com/dp/B0GDXVHFDR) |
+| Eyeglass lenses | LenzReborn precut, non-polarized, transitional replacement lenses for Ray-Ban Meta Wayfarer RW4008 / Gen 2 RW4012, 53 mm; listed thickness 1.2 mm. Builder-reported purchased pair. | 2 | 1 pair | $7.50 | [LenzReborn lens pair](https://www.amazon.com/dp/B0GDXVHFDR) |
 | Optical combiner | Two-way acrylic mirror, 30% light transmission, 12 x 12 x 0.04 inches | 1 cut piece | 3 sheets | $10.27 | [Three-sheet acrylic two-way mirror pack](https://www.amazon.com/dp/B0FPMC4M2F) |
 | Notification controls | 6 x 6 x 6 mm, four-pin momentary tactile pushbuttons | 2 | 10 switches | $5.29 | [Corpco ten-pack](https://www.amazon.com/dp/B01GN79QF8) |
 | Hookup wire | Flexible, stranded, tinned-copper 30 AWG silicone wire, six colors, 10 feet each | As needed | 1 six-color set | $9.29 | [Fermerry wire set](https://www.amazon.com/dp/B089D31ZX6) |
