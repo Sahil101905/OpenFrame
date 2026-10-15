@@ -50,6 +50,7 @@ so the shell can be reviewed first. See the out-of-scope section in
 | 🥽 [Windows Unity Simulator Setup](documentation/setup-windows.md) | How to open and test the notification simulator in Unity. |
 | 🔧 [Monocular Hardware Prototype BOM](documentation/prototype-bom.md) | Finalized parts, costs, safety notes, and build order for the first wearable prototype. |
 | 🥽 [Hardware Prototype Assembly](documentation/prototype-assembly.md) | Step-by-step electronics, optics, combiner cutting, CAD, charging, and wear-test procedure. |
+| 📐 [V0 CAD](cad/README.md) | STEP export of the V0 glasses assembly, the Onshape link, and the FeatureScript source. |
 
 ---
 
@@ -77,6 +78,7 @@ the [iOS Host Beginner Guide](documentation/ios-host-beginner-guide.md) and
 ```
 OpenFrame/
 ├── README.md                       # You are here
+├── cad/                            # V0 assembly STEP, FeatureScript source, Onshape link
 ├── documentation/
 │   ├── ios-host-beginner-guide.md  # Full beginner walkthrough
 │   └── setup-macos.md              # Prerequisites + build/test/run
